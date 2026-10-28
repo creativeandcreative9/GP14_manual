@@ -67,33 +67,223 @@ th{background:var(--panel)}
 </head>
 <body>
 <div class="layout">
-<nav class="toc" aria-label="目次"><h2>ポーズスタジオ 使用手引書</h2><div class="grp">はじめに</div><a href="#ch-index">ポーズスタジオ 使用手引書</a><a href="#ch-01_intro">はじめに</a><a href="#ch-02_limits">苦手なこと</a><div class="grp">使いはじめる</div><a href="#ch-03_install">入れ方</a><a href="#ch-04_first-practice">はじめての練習</a><div class="grp">やりたいことから探す</div><a href="#ch-05_01_goals">やりたいこと別（これから書く）</a><div class="grp">画面の説明</div><a href="#ch-06_01_screen-pose">画面の説明（これから書く）</a><div class="grp">困ったとき・言葉</div><a href="#ch-07_trouble">困ったとき</a><a href="#ch-08_glossary">言葉の一覧</a></nav>
+<nav class="toc" aria-label="目次"><h2>ポーズスタジオ 使用手引書</h2><div class="grp">はじめに</div><a href="#ch-index">ポーズスタジオ 使用手引書</a><a href="#ch-01_intro">はじめに</a><a href="#ch-02_limits">苦手なこと</a><div class="grp">使いはじめる</div><a href="#ch-03_install">入れ方</a><a href="#ch-04_first-practice">はじめての練習</a><div class="grp">やりたいことから探す</div><a href="#ch-05_01_pick-pose">できあいのポーズを当てたい</a><a href="#ch-05_02_pull-limbs">手足を引っぱって、ポーズを直したい</a><a href="#ch-05_03_rotate-joints">関節を少しずつ回して、細かく直したい</a><a href="#ch-05_04_hands">指や手の形を変えたい</a><a href="#ch-05_05_face">表情を付けたい</a><a href="#ch-05_06_hair-skirt">髪やスカートの形を整えたい</a><a href="#ch-05_07_save-pose">ポーズを保存して、あとで使いたい</a><a href="#ch-05_08_photo">きれいな写真を撮りたい</a><a href="#ch-05_09_video">動画や GIF にしたい</a><a href="#ch-05_10_vrchat">VRChat の中で、ポーズを使いたい</a><div class="grp">画面の説明</div><a href="#ch-06_1_screen-easy">画面の説明（かんたん表示）</a><a href="#ch-06_2_screen-pose">画面の説明（ポーズ・手・表情）</a><a href="#ch-06_3_screen-bones-library">画面の説明（揺れもの・ライブラリ）</a><a href="#ch-06_4_screen-capture">画面の説明（撮影・動画・画像編集）</a><a href="#ch-06_5_screen-vrchat">画面の説明（VRChat・設定）</a><div class="grp">困ったとき・言葉</div><a href="#ch-07_trouble">困ったとき</a><a href="#ch-08_glossary">言葉の一覧</a><div class="grp">くわしい人向け</div><a href="#ch-09_automation">プログラムから使う</a></nav>
 <main>
 <section class="chapter" id="ch-index"><h1>ポーズスタジオ 使用手引書</h1>
-<p>この章は、これから書きます。</p>
+<ul>
+<li>版: 0.1.0</li>
+<li>日付: 2026-10-28</li>
+</ul>
+<p>Unity に不慣れな方でも、お使いいただけます。</p>
+<h2>この手引書で、できるようになること</h2>
+<ul>
+<li>ポーズスタジオを、Unity に入れる。</li>
+<li>アバターに、ポーズを付ける。</li>
+<li>手の形や表情を、整える。</li>
+<li>できたポーズを、写真に撮る。</li>
+</ul>
+<h2>目次</h2>
+<ul>
+<li><a href="#ch-01_intro">はじめに</a></li>
+<li><a href="#ch-02_limits">苦手なこと</a></li>
+<li><a href="#ch-03_install">入れ方</a></li>
+<li><a href="#ch-04_first-practice">はじめての練習</a></li>
+<li>画面の説明: <a href="#ch-06_1_screen-easy">かんたん表示</a>、<a href="#ch-06_2_screen-pose">ポーズ・手・表情</a>、<a href="#ch-06_3_screen-bones-library">揺れもの・ライブラリ</a>、<a href="#ch-06_4_screen-capture">撮影・動画・画像編集</a>、<a href="#ch-06_5_screen-vrchat">VRChat・設定</a></li>
+<li><a href="#ch-07_trouble">困ったとき</a></li>
+<li><a href="#ch-08_glossary">言葉の一覧</a></li>
+<li><a href="#ch-09_automation">プログラムから使う</a></li>
+</ul>
+<h2>やりたいことから探す</h2>
+<ul>
+<li><a href="#ch-05_01_pick-pose">できあいのポーズを当てたい</a></li>
+<li><a href="#ch-05_02_pull-limbs">手足を引っぱって、ポーズを直したい</a></li>
+<li><a href="#ch-05_03_rotate-joints">関節を少しずつ回して、細かく直したい</a></li>
+<li><a href="#ch-05_04_hands">指や手の形を変えたい</a></li>
+<li><a href="#ch-05_05_face">表情を付けたい</a></li>
+<li><a href="#ch-05_06_hair-skirt">髪やスカートの形を整えたい</a></li>
+<li><a href="#ch-05_07_save-pose">ポーズを保存して、あとで使いたい</a></li>
+<li><a href="#ch-05_08_photo">きれいな写真を撮りたい</a></li>
+<li><a href="#ch-05_09_video">動画や GIF にしたい</a></li>
+<li><a href="#ch-05_10_vrchat">VRChat の中で、ポーズを使いたい</a></li>
+</ul>
+<p>うまくいかないときは、<a href="#ch-07_trouble">困ったとき</a>を見てください。</p>
+<p>知らない言葉が出たら、<a href="#ch-08_glossary">言葉の一覧</a>を見てください。</p>
 </section>
 <section class="chapter" id="ch-01_intro"><h1>はじめに</h1>
-<p>この章は、これから書きます。</p>
+<h2>ポーズスタジオでできること</h2>
+<p>ポーズスタジオは、Unity の中で、人型のアバターにポーズを付ける道具です。</p>
+<p>できたポーズは、そのまま写真や動画に撮れます。</p>
+<p><img src="images/01_01_sample_photo.png" alt="ポーズスタジオでポーズを付けて撮った、アバターの写真の例。" /></p>
+<p>ポーズスタジオで、ポーズを付けて撮った写真です。</p>
+<ul>
+<li>ポーズの絵をクリックするだけで、アバターにポーズが付きます。</li>
+<li>手や足の印を引っぱると、うでや足がついてきます。</li>
+<li>プレイモード（Unity でゲームを動かす状態）に、入らなくても使えます。</li>
+<li>保存したポーズは、ほかのアバターにも使えます。</li>
+</ul>
+<h2>安心して試せます</h2>
+<ul>
+<li>まちがえても、［元に戻す］か Ctrl+Z で、1 つ前に戻せます。</li>
+<li>アバターに、ポーズスタジオの部品は付きません。アップロードのじゃまをしません。</li>
+<li>アバターの元のファイル（モデルやプレハブ）は、書きかえません。</li>
+<li>同じ名前で保存するときは、上書きする前に、たしかめる画面が出ます。</li>
+</ul>
+<h2>必要なもの</h2>
+<ul>
+<li>Unity 2022.3。VRChat 用のアバターなら、VRChat が決めた版（2022.3.22f1）をおすすめします。</li>
+<li>人型（Humanoid）として設定された、アバターのモデル。</li>
+<li>VRChat SDK は、なくても使えます。あると、VRChat 用の機能が増えます。</li>
+<li>ポーズスタジオは、BOOTH の商品ページで手に入ります。<!-- 要確認: BOOTH の URL --></li>
+</ul>
+<h2>かかる時間</h2>
+<p>入れるまでが約 5 分、はじめての練習が約 10 分です。<!-- 要確認: 実測 --></p>
+<h2>先に知っておく言葉</h2>
+<ul>
+<li>シーンビュー: Unity の真ん中にある、アバターを見る画面です。</li>
+<li>ヒエラルキー: Unity の左にある、置いてある物の一覧です。</li>
+<li>プロジェクトウィンドウ: Unity の下にある、ファイルの一覧です。</li>
+<li>人型（Humanoid）: 頭・うで・足の骨を、Unity が見分けられるアバターです。</li>
+<li>印（ハンドル）: シーンビューに出る、引っぱるための四角や丸です。</li>
+</ul>
+<h2>画像の見方</h2>
+<p>赤い枠と数字は、押す場所です。数字は、下の手順の番号と同じです。</p>
 </section>
 <section class="chapter" id="ch-02_limits"><h1>苦手なこと</h1>
-<p>この章は、これから書きます。</p>
+<p>ポーズスタジオにも、苦手なことがあります。買う前に、ここでたしかめてください。</p>
+<h2>使えるアバター</h2>
+<ul>
+<li>人型（Humanoid）でないモデルには、ポーズを付けられません。動物の形などで、人型の設定ができないものは使えません。</li>
+</ul>
+<h2>動き・揺れ</h2>
+<ul>
+<li>ポーズは、止まった形を作る道具です。歩くなどの動きを、1 から作る道具ではありません。ポーズとポーズの間を、なめらかにつなぐ動画は作れます。</li>
+<li>髪やスカートの揺れは、止まった形として整えます。PhysBone の揺れを見るには、VRChat SDK（3.10.5 以降）が要ります。</li>
+</ul>
+<h2>VRChat の中</h2>
+<ul>
+<li>カメラのほうを見るポーズは、VRChat の中では作れません。ポーズに入れた目の向きで止めることはできます。</li>
+<li>明るさや画面の効果を、VRChat の中で変える機能はありません。写真のときは、Unity の中の撮影の設定を使ってください。</li>
+</ul>
+<h2>書き出し</h2>
+<ul>
+<li>動画を MP4 で書き出すには、ffmpeg（動画を作る無料のソフト）が要ります。なくても、GIF と PNG で書き出せます。</li>
+</ul>
+<!-- 要確認: 確かめた環境（Windows など）は、公開の前に書く -->
 </section>
 <section class="chapter" id="ch-03_install"><h1>入れ方</h1>
-<p>この章は、これから書きます。</p>
+<h2>ツールを手に入れます</h2>
+<ol>
+<li><p>BOOTH の商品ページで「ポーズスタジオ」を買い、ZIP ファイルをダウンロードします。<!-- 要確認: BOOTH の URL --></p></li>
+<li><p>ZIP ファイルを解凍します。中に <code>PoseStudio.unitypackage</code> があることを、たしかめます。</p></li>
+</ol>
+<h2>Unity に入れます</h2>
+<p>先に、アバターが入っている Unity のプロジェクトを開いておきます。</p>
+<ol start="3">
+<li><p><code>PoseStudio.unitypackage</code> をダブルクリックします。</p>
+<p>Unity の上のメニューから、［Assets &gt; Import Package &gt; Custom Package...］を選んでも同じです。</p></li>
+<li><p>「Import Unity Package」の窓が出ます。すべてに印が付いたまま、右下の［Import］を押します。</p>
+<p><img src="images/03_01_import_window.png" alt="Import Unity Package の窓。右下の Import のボタンが赤い枠で囲まれている。" /></p></li>
+<li><p>読み込みが終わるまで、待ちます。</p></li>
+</ol>
+<h2>入ったことを、たしかめます</h2>
+<p>はじめて入れたときは、ポーズスタジオの窓が自動で開きます。</p>
+<ol start="6">
+<li><p>開かないときは、Unity の上のメニューから［Tools &gt; Pose Studio &gt; Open］を選びます。</p>
+</li>
+</ol>
+<p>窓が開けば、入っています。メニューが出ない・赤いエラーが出るときは、<a href="#ch-07_trouble">困ったとき</a>を見てください。</p>
+<h2>新しい版を入れるとき</h2>
+<p>新しい版の <code>PoseStudio.unitypackage</code> を、上と同じ手順で入れます。</p>
+<p>古い版を消す必要はありません。保存したポーズも残ります。</p>
+<p>入れたあとにエラーが出たときは、プロジェクトウィンドウの「Packages」の中の「Pose Studio」を消してから、入れ直します。</p>
 </section>
 <section class="chapter" id="ch-04_first-practice"><h1>はじめての練習</h1>
+<p>アバターにポーズを付けて、写真を 1 枚撮ります。</p>
+<p>練習なので、どのアバターでも大丈夫です。アバターがないときは、練習用のマネキン（人の形の人形）を出せます。</p>
+<h2>アバターを入れます</h2>
+<ol>
+<li><p>ヒエラルキーで、ポーズを付けるアバターをクリックします。</p></li>
+<li><p>Unity の上のメニューから、［Tools &gt; Pose Studio &gt; Open］を選びます。</p>
+<p>窓が開き、アバターが自動で入ります。シーンビューに、アバターの全身が映ります。</p>
+<p>アバターがいないときは、窓の［試し用のマネキンを出す］を押します。</p>
+<p><img src="images/04_01_open_window.png" alt="ポーズスタジオの窓を開いたところ。上のアバターの欄が赤い枠で囲まれている。" /></p></li>
+</ol>
+<h2>ポーズを付けます</h2>
+<ol start="3">
+<li><p>窓の［ポーズをえらぶ］を押します。</p></li>
+<li><p>ポーズの絵の中から、「手を振る」をクリックします。アバターが、手を振るポーズになります。</p>
+<p><img src="images/04_02_pick_pose.png" alt="ポーズをえらぶの画面。手を振るポーズの絵が赤い枠で囲まれている。" /></p></li>
+</ol>
+<h2>手を動かします</h2>
+<ol start="5">
+<li><p>窓の［からだを動かす］を押します。シーンビューの手と足に、緑の四角が出ます。</p></li>
+<li><p>右手の緑の四角を、上へドラッグします。うでが、ついてきます。</p>
+<p><img src="images/04_03_drag_hand.png" alt="シーンビュー。アバターの右手の緑の四角が赤い枠で囲まれている。" /></p></li>
+<li><p>［元に戻す］を押します。手が、動かす前に戻ります。Ctrl+Z でも同じです。</p>
+<p><img src="images/04_04_undo.png" alt="からだを動かすの画面。元に戻すのボタンが赤い枠で囲まれている。" /></p></li>
+</ol>
+<h2>写真を撮ります</h2>
+<ol start="8">
+<li><p>窓の［写真］を押します。</p></li>
+<li><p>［写真を撮る］を押します。シーンビューに見えているとおりに撮れます。</p></li>
+<li><p>［保存先を開く］を押すと、撮った写真のフォルダが開きます。</p>
+<p><img src="images/04_05_photo.png" alt="写真の画面。写真を撮るのボタンと、保存先を開くのボタンが赤い枠で囲まれている。" /></p></li>
+</ol>
+<p>写真は、プロジェクトのフォルダの中の <code>Screenshots/PoseStudio</code> に保存されます。</p>
+<p>うまくいかないときは、<a href="#ch-07_trouble">困ったとき</a>を見てください。</p>
+</section>
+<section class="chapter" id="ch-05_01_pick-pose"><h1>できあいのポーズを当てたい</h1>
 <p>この章は、これから書きます。</p>
 </section>
-<section class="chapter" id="ch-05_01_goals"><h1>やりたいこと別（これから書く）</h1>
+<section class="chapter" id="ch-05_02_pull-limbs"><h1>手足を引っぱって、ポーズを直したい</h1>
 <p>この章は、これから書きます。</p>
 </section>
-<section class="chapter" id="ch-06_01_screen-pose"><h1>画面の説明（これから書く）</h1>
+<section class="chapter" id="ch-05_03_rotate-joints"><h1>関節を少しずつ回して、細かく直したい</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-05_04_hands"><h1>指や手の形を変えたい</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-05_05_face"><h1>表情を付けたい</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-05_06_hair-skirt"><h1>髪やスカートの形を整えたい</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-05_07_save-pose"><h1>ポーズを保存して、あとで使いたい</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-05_08_photo"><h1>きれいな写真を撮りたい</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-05_09_video"><h1>動画や GIF にしたい</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-05_10_vrchat"><h1>VRChat の中で、ポーズを使いたい</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-06_1_screen-easy"><h1>画面の説明（かんたん表示）</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-06_2_screen-pose"><h1>画面の説明（ポーズ・手・表情）</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-06_3_screen-bones-library"><h1>画面の説明（揺れもの・ライブラリ）</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-06_4_screen-capture"><h1>画面の説明（撮影・動画・画像編集）</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-06_5_screen-vrchat"><h1>画面の説明（VRChat・設定）</h1>
 <p>この章は、これから書きます。</p>
 </section>
 <section class="chapter" id="ch-07_trouble"><h1>困ったとき</h1>
 <p>この章は、これから書きます。</p>
 </section>
 <section class="chapter" id="ch-08_glossary"><h1>言葉の一覧</h1>
+<p>この章は、これから書きます。</p>
+</section>
+<section class="chapter" id="ch-09_automation"><h1>プログラムから使う</h1>
 <p>この章は、これから書きます。</p>
 </section>
 </main>
@@ -110,6 +300,9 @@ th{background:var(--panel)}
     var items=[].filter.call(ol.children,function(c){return c.tagName==='LI'});
     if(!items.length||ol.closest('li'))return;
     ol.classList.add('steps');
+    /* <ol start="N"> の番号を、丸の番号にも使う（見出しで区切っても、章の中で通し番号にするため） */
+    var start=parseInt(ol.getAttribute('start')||'1',10);
+    if(start>1)ol.style.counterReset='step '+(start-1);
     var sec=ol.closest('section');
     items.forEach(function(li,i){
       var id=(sec?sec.id:'')+':'+i+':'+li.textContent.trim().slice(0,24);
