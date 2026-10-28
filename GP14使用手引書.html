@@ -55,6 +55,8 @@ th{background:var(--panel)}
 .zukan-card>h2{margin-top:.7em}
 .zukan-card>h3{margin-top:.7em}
 .zukan-card img{background:var(--bg)}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}.photos figure{margin:0}.photos img{margin:0 0 6px}.photos figcaption{font-size:13.5px;line-height:1.5;color:var(--muted)}
+@media (max-width:700px){.photos{grid-template-columns:1fr}}
 .zukan-card table{background:var(--bg)}
 .zukan-hero{border:2px solid var(--accent)}
 .zukan-where{font-size:15px;border-top:1px dashed var(--line);padding-top:8px}
@@ -564,9 +566,15 @@ Project ウィンドウには出ないので、見るときは［保存先を開
 <li><p>［ピント］で、ピントを合わせる所を選びます。はじめは［目］です。</p>
 <p><img src="images/05_08_lens_ui.png" alt="撮影のタブのボケの欄。見出し、ボケを付けるのチェック、ボケの強さのスライダー、ピントの選び方が赤い枠で囲まれている。" /></p></li>
 <li><p>［Scene ビューから撮る］を押します。何回も描いて重ねるので、ふつうより時間がかかります。進み具合の窓で、やめることもできます。</p>
-<p><img src="images/05_08_lens_compare.jpg" alt="同じポーズの写真を 2 枚並べたもの。左はボケなしで、後ろの色の玉がくっきりしている。右はボケありで、顔ははっきりしたまま、後ろの玉が丸くぼけている。" /></p></li>
+<p><img src="images/05_08_bokeh_1_compare.jpg" alt="屋敷の庭で、ピースをするアバターの写真を 2 枚並べたもの。左はボケなしで、後ろの屋敷と植え込みがくっきりしている。右はボケありで、顔ははっきりしたまま、後ろがやわらかくぼけている。" /></p></li>
 </ol>
-<p>左がボケなし、右がボケありです。半透明の物や髪の先も、きれいにぼけます。［背景を透過］と一緒にも使えます。</p>
+<p>左がボケなし、右がボケありです。髪の先や半透明の物も、きれいにぼけます。［背景を透過］と一緒にも使えます。</p>
+<h3>作例</h3>
+<div class="photos">
+<figure><img src="images/05_08_bokeh_2_lookback.jpg" alt="夕方の光の庭で、斜め後ろから振り向くアバター。顔はくっきりして、後ろの木と植え込みが大きくぼけている。" /><figcaption>振り向き。夕方の光。F 1.2、ピントは［目］。</figcaption></figure>
+<figure><img src="images/05_08_bokeh_3_closeup.jpg" alt="手を髪にそえてほほえむ、顔のアップ。後ろの屋敷が大きくぼけている。" /><figcaption>顔のアップ。F 1.2、ピントは［目］。</figcaption></figure>
+<figure><img src="images/05_08_bokeh_4_hand.jpg" alt="カメラへ手をのばしてピースをするアバター。手前の手がくっきりして、顔と後ろがやわらかくぼけている。" /><figcaption>手前の手にピント。F 2、ピントは［距離で決める］。</figcaption></figure>
+</div>
 <h3>気をつけること</h3>
 <ul>
 <li>［アバターだけ写す］が入っていると、床や小物は写りません。写したいときは、チェックを外します。</li>
