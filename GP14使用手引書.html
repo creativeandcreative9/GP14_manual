@@ -136,8 +136,8 @@ th{background:var(--panel)}
 <li>VRChat SDK は、なくても使えます。あると、VRChat 用の機能が増えます。</li>
 <li>ポーズスタジオは、BOOTH の商品ページで手に入ります。<!-- 要確認: BOOTH の URL --></li>
 </ul>
-<h2>かかる時間</h2>
-<p>入れるまでが約 5 分、はじめての練習が約 10 分です。<!-- 要確認: 実測 --></p>
+<h2>手順の数</h2>
+<p>入れ方は 6 手順、はじめての練習は 10 手順です。</p>
 <h2>先に知っておく言葉</h2>
 <ul>
 <li>シーンビュー: Unity の真ん中にある、アバターを見る画面です。</li>
@@ -169,7 +169,11 @@ th{background:var(--panel)}
 <ul>
 <li>動画を MP4 で書き出すには、ffmpeg（動画を作る無料のソフト）が要ります。なくても、GIF と PNG で書き出せます。</li>
 </ul>
-<!-- 要確認: 確かめた環境（Windows など）は、公開の前に書く -->
+<h2>確かめた環境</h2>
+<ul>
+<li>Windows 11、Unity 2022.3.22f1。</li>
+<li>ほかの環境では、まだ確かめていません。</li>
+</ul>
 </section>
 <section class="chapter" id="ch-03_install"><h1>入れ方</h1>
 <h2>ツールを手に入れます</h2>
@@ -1009,9 +1013,10 @@ public static class PoseSample
 <ol>
 <li><p>Unity のメニューから、［Tools &gt; Pose Studio &gt; Automation &gt; Start HTTP API］を選びます。</p></li>
 </ol>
-<!-- 要確認: pose_studio_api.py を配布物に入れるか -->
-<p>付属の <code>pose_studio_api.py</code>（Python 3）で、依頼を送れます。</p>
-<pre><code>python pose_studio_api.py --project /path/to/UnityProject '{"Operation":"types"}'</code></pre>
+<p>始めると、プロジェクトの <code>Library/GP14Api/connection.json</code> に、つなぐ先の URL と、合言葉（トークン）が書かれます。トークンは、人に見せないでください。</p>
+<p>依頼は、JSON を <code>POST /v1/commands</code> に送ります。<code>Authorization: Bearer トークン</code> を付けます。返ってきた <code>requestId</code> で、<code>GET /v1/commands/requestId</code> から結果を受け取ります。</p>
+<pre><code>POST /v1/commands
+{"Operation":"types"}</code></pre>
 <p>つながるのは、同じパソコンの中だけです。止めるときは、［Tools &gt; Pose Studio &gt; Automation &gt; Stop HTTP API］を選びます。</p>
 <p>プレイモードに入ったときと、スクリプトが読み込み直されたときにも、自動で止まります。</p>
 <h3>気をつけること</h3>
