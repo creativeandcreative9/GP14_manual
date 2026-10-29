@@ -530,6 +530,23 @@ th{background:var(--panel)}
 背景を透明にして、ほかの絵に重ねることもできます。
 ふつうの撮り方は「<a href="#ch-04_first-practice">はじめての練習</a>」にあります。</p>
 <p>先に、窓を開いてアバターを入れ、ポーズを付けておきます。</p>
+<h3 id="capture-look-101">1.0.1：撮影プリセットを選んで確かめます</h3>
+<p>［くわしく］→［撮影］の上部にある［撮影プリセット］で、光と色調をまとめて選べます。括弧の BRP / URP は、対応するレンダーパイプライン（描画方式）です。現在のプロジェクトに対応する項目だけが候補に出ます。HDRP は対象外です。</p>
+<table><thead><tr><th>プリセット</th><th>BRP</th><th>URP</th></tr></thead><tbody>
+<tr><td>A：斜め上からの光</td><td>A (BRP)</td><td>A (URP)</td></tr>
+<tr><td>B：青みのある環境光</td><td>B (BRP)</td><td>B (URP)</td></tr>
+<tr><td>C：やわらかな背景ボケ</td><td>なし</td><td>C (URP)</td></tr></tbody></table>
+<ol><li>［プリセット］で A・B・C のいずれかを選びます。</li>
+<li>［プリセットをプレビュー］を押し、別の窓で写りを確かめます。撮影用カメラの構図が使われます。</li>
+<li>プレビューの［● 撮影］を押すと、出力で指定した大きさの PNG を保存します。選択やプレビューだけでは保存しません。</li></ol>
+<p><a href="images/1_0_1_capture_look_ui.png" target="_blank" rel="noopener"><img src="images/1_0_1_capture_look_ui.png" alt="撮影タブのプリセット選択と、撮影ボタンのあるプレビュー窓。生成したマネキンで操作を確認しています。" loading="lazy" /></a><br />画像を押すと大きく開けます。</p>
+<p>下は同じ生成マネキンを使った実際の撮影例です。素材・ポーズ・構図によって見た目は変わります。</p>
+<table><thead><tr><th>A (BRP)</th><th>B (BRP)</th></tr></thead><tbody><tr><td><img src="images/1_0_1_look_A_brp.png" alt="A BRPの撮影例" loading="lazy" /></td><td><img src="images/1_0_1_look_B_brp.png" alt="B BRPの撮影例" loading="lazy" /></td></tr></tbody></table>
+<table><thead><tr><th>A (URP)</th><th>B (URP)</th><th>C (URP)</th></tr></thead><tbody><tr><td><img src="images/1_0_1_look_A_urp.png" alt="A URPの撮影例" loading="lazy" /></td><td><img src="images/1_0_1_look_B_urp.png" alt="B URPの撮影例" loading="lazy" /></td><td><img src="images/1_0_1_look_C_urp.png" alt="C URPの撮影例" loading="lazy" /></td></tr></tbody></table>
+<p>BRP のプリセットには Post Processing 3.x が必要です。URP は Universal RP 14 以降の Universal Renderer を使います。描画方式を切り替えて以前のプリセットが非対応になったときは、対応する項目か［なし（手動設定）］を選び直してください。</p>
+<p>プリセットは GP20 の光と色調を汎用化したものです。材質・構図を保ち、モデル固有の材質補正や固定位置のライト模様は使わないため、研究用の画像と完全に一致するものではありません。C のボケは被写体と背景の距離によって変わります。顔の後ろに背景が無い場合は、ボケの差が小さくなります。</p>
+<p>適用中は、個別に設定した撮影ライト・ポストプロセスよりプリセットが優先されます。［なし（手動設定）］で元の手動設定に戻せます。シーンのライト・環境光は描画の間だけ変わり、撮影後に戻ります。通常の Scene ビューへ常設する機能ではありません。</p>
+<p>URPでは、アバターのマテリアルもURP対応が必要です。マテリアルの自動変換は行いません。画像・グラデーションとして後から合成する背景には、URPの色調やボケはかかりません。背景にもボケを付けるときは、シーン内に背景の物体を配置し、［アバターだけ写す］をオフにしてください。URPの影解像度はプロジェクトのURP Assetで調整します。2D Renderer、カメラスタック合成、HDRPは対象外です。</p>
 <h3>大きさと画質を決めます</h3>
 <ol>
 <li><p>窓の上の［くわしく］を押します。</p></li>
