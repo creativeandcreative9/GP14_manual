@@ -181,16 +181,17 @@ th{background:var(--panel)}
 <section class="chapter" id="ch-03_install"><h1>入れ方</h1>
 <h2>ツールを手に入れます</h2>
 <ol>
-<li><p>BOOTH の商品ページから、「ポーズ工房」の ZIP ファイルをダウンロードします。<!-- 要確認: BOOTH の URL --></p></li>
-<li><p>ダウンロードした ZIP ファイルを解凍します（Windows では右クリックの「すべて展開」、Mac ではダブルクリック）。中に <code>PoseKobo.unitypackage</code> があることを、たしかめます。</p></li>
+<li><p><a href="https://github.com/creativeandcreative9/GP14_open/releases/latest">ポーズ工房の配布ページ</a>を開きます。</p></li>
+<li><p>［Assets］にある <code>S_PoseKoubo_v1_0_8.unitypackage</code> のような、末尾が <code>.unitypackage</code> のファイルをダウンロードします。版の数字は更新されます。</p></li>
 </ol>
 <h2>Unity に入れます</h2>
 <p>先に、アバターが入っている Unity のプロジェクトを、Unity Hub から開いておきます。Unity の版は、Unity Hub のプロジェクトの一覧に出ます。2022.3 で始まる版なら使えます。</p>
 <ol start="3">
-<li><p><code>PoseKobo.unitypackage</code> をダブルクリックします。</p>
+<li><p>ダウンロードした <code>.unitypackage</code> をダブルクリックします。</p>
 <p>Unity の上のメニューから、［Assets &gt; Import Package &gt; Custom Package...］を選んでも同じです。</p></li>
-<li><p>取り込む物の一覧の窓が出ます。上に「PoseKobo」と出ます。すべてに印が付いたまま、右下の［Import］を押します。</p>
-<p><img src="images/03_01_import_window.png" alt="取り込む物の一覧の窓。上に PoseKobo と出ている。右下の Import のボタンが赤い枠で囲まれている。" /></p></li>
+<li><p>取り込む物の一覧の窓が出ます。上に選んだファイルの名前が出ます。すべてに印が付いたまま、右下の［Import］を押します。</p>
+<p>画像は以前の配布名での例です。</p>
+<p><img src="images/03_01_import_window.png" alt="取り込む物の一覧の窓の例。右下の Import のボタンが赤い枠で囲まれている。" /></p></li>
 <li><p>読み込みが終わるまで、待ちます。取り込みの窓と、進み具合の表示が消えたら終わりです。</p></li>
 </ol>
 <h2>入ったことを、たしかめます</h2>
@@ -201,8 +202,20 @@ th{background:var(--panel)}
 <p><img src="images/03_02_tools_menu.png" alt="Unity の上のメニュー。Tools、Pose Kobo と開き、その下の Open が赤い枠で囲まれている。" /></p></li>
 </ol>
 <p>窓が開けば、入っています。メニューが出ない・赤いエラーが出るときは、<a href="#ch-07_trouble">困ったとき</a>を見てください。</p>
+<h2>更新を確認します</h2>
+<p>自動確認は標準でオンです。ポーズ工房を開いたときに、1日1回を目安に新しい版を確認します。上部の［更新を確認］でも調べられます。新しい版があるときは［更新］が出ます。</p>
+<p>1.0.7以前には更新ボタンがありません。1.0.8を一度手動で入れると、その後の版から更新ボタンを使えます。</p>
+<p>画像は、1.0.8 を使っていて 1.0.9 が出た場合の例です。</p>
+<p><img src="images/1_0_8_update_anon.png" alt="新しい版があるときのポーズ工房。版番号と更新を確認・更新のボタンが上に表示されています。" /></p>
+<ol>
+<li>［更新］を押し、版と変更内容を確かめます。作業中のシーンは保存してください。</li>
+<li>［続ける］を押すと、Unityの取り込み画面が開きます。すべてに印が付いていることを確認し、［Import］を押します。</li>
+<li>再読み込みが終わり、「更新が完了しました」と出るまで待ちます。</li>
+</ol>
+<p>通信できないときも、ポーズ工房は使えます。自動確認を止めたいときは、くわしく表示の［設定］で［自動で更新を確認］をオフにします。手動の［更新を確認］は使えます。</p>
+<p>Packages 版は Package Manager または VCC から更新してください。</p>
 <h2>新しい版を入れるとき</h2>
-<p>新しい版の <code>PoseKobo.unitypackage</code> を、上と同じ手順で入れます。</p>
+<p>手動で更新する場合は、新しい版の <code>.unitypackage</code> を、上と同じ手順で入れます。</p>
 <p>1.0.7 から、ツールのフォルダ名は <code>Assets/S_PoseKoubo</code> です。</p>
 <p>前の版の <code>Assets/SanaPoseKoubo</code> または <code>Assets/PoseKobo</code> がある場合は、先にプロジェクトをバックアップします。Unity のプロジェクトウィンドウで 旧フォルダを選び、F2 キーで <code>S_PoseKoubo</code> に名前を変えてから、新しい版を入れてください。フォルダをコピーしたり、保存したポーズごと消したりしないでください。</p>
 <p>同じフォルダ名の版を更新するときは、上と同じ取り込み手順で更新できます。保存したポーズも残ります。自分で指定した保存先は、そのまま使えます。</p>
