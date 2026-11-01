@@ -179,10 +179,11 @@ th{background:var(--panel)}
 </ul>
 </section>
 <section class="chapter" id="ch-03_install"><h1>入れ方</h1>
+<p><strong>すでにお使いの方へ：</strong>1.0.20からフォルダ名が <code>GP14_PoseKoubo</code> になりました。新版を入れる前に、<a href="#update-folder">下の名前変更の手順</a>を行ってください。撮影した写真や保存ポーズも、フォルダごと一緒に保持します。</p>
 <h2>ツールを手に入れます</h2>
 <ol>
 <li><p><a href="https://github.com/creativeandcreative9/GP14_open/releases/latest">ポーズ工房の配布ページ</a>を開きます。</p></li>
-<li><p>［Assets］にある <code>S_PoseKoubo_v1_0_8.unitypackage</code> のような、末尾が <code>.unitypackage</code> のファイルをダウンロードします。版の数字は更新されます。</p></li>
+<li><p>［Assets］にある <code>S_PoseKoubo_v1_0_20.unitypackage</code> のような、末尾が <code>.unitypackage</code> のファイルをダウンロードします。版の数字は更新されます。</p></li>
 </ol>
 <h2>Unity に入れます</h2>
 <p>先に、アバターが入っている Unity のプロジェクトを、Unity Hub から開いておきます。Unity の版は、Unity Hub のプロジェクトの一覧に出ます。2022.3 で始まる版なら使えます。</p>
@@ -205,7 +206,7 @@ th{background:var(--panel)}
 <p>1.0.17では、URPを入れていないBRP環境への導入時に、同梱のURP専用シェーダーからエラーが出る不具合を修正しています。BRP環境へURPパッケージを追加する必要はありません。</p>
 <h2>更新を確認します</h2>
 <p>自動確認は標準でオンです。ポーズ工房を開いたときに、1日1回を目安に新しい版を確認します。上部の［更新を確認］でも調べられます。新しい版があるときは［更新］が出ます。</p>
-<p>1.0.7以前には更新ボタンがありません。1.0.8を一度手動で入れると、その後の版から更新ボタンを使えます。</p>
+<p>1.0.19以前から初めて1.0.20以降へ更新する場合は、先に下記のフォルダ名変更を行い、配布ページから手動で取り込んでください。新版を入れた後は、上部の更新ボタンを使えます。</p>
 <p>画像は、1.0.8 を使っていて 1.0.9 が出た場合の例です。</p>
 <p><img src="images/1_0_8_update_anon.png" alt="新しい版があるときのポーズ工房。版番号と更新を確認・更新のボタンが上に表示されています。" /></p>
 <ol>
@@ -215,11 +216,19 @@ th{background:var(--panel)}
 </ol>
 <p>通信できないときも、ポーズ工房は使えます。自動確認を止めたいときは、くわしく表示の［設定］で［自動で更新を確認］をオフにします。手動の［更新を確認］は使えます。</p>
 <p>Packages 版は Package Manager または VCC から更新してください。</p>
-<h2>新しい版を入れるとき</h2>
-<p>手動で更新する場合は、新しい版の <code>.unitypackage</code> を、上と同じ手順で入れます。</p>
-<p>1.0.7 から、ツールのフォルダ名は <code>Assets/S_PoseKoubo</code> です。</p>
-<p>前の版の <code>Assets/SanaPoseKoubo</code> または <code>Assets/PoseKobo</code> がある場合は、先にプロジェクトをバックアップします。Unity のプロジェクトウィンドウで 旧フォルダを選び、F2 キーで <code>S_PoseKoubo</code> に名前を変えてから、新しい版を入れてください。フォルダをコピーしたり、保存したポーズごと消したりしないでください。</p>
-<p>同じフォルダ名の版を更新するときは、上と同じ取り込み手順で更新できます。保存したポーズも残ります。自分で指定した保存先は、そのまま使えます。</p>
+<h2 id="update-folder">初回の更新：フォルダ名を変更してから取り込みます</h2>
+<p>新しい導入先は <code>Assets/GP14_PoseKoubo</code> です。配布ファイル名は、以前の更新機能との互換性のため <code>S_PoseKoubo_v…unitypackage</code> のままです。</p>
+<ol>
+<li>撮影・動画出力を終え、作業を保存し、プロジェクトをバックアップします。ポーズ工房の窓を閉じます。</li>
+<li>Unity の <strong>Project ウィンドウ</strong>で <code>Assets/S_PoseKoubo</code> を選び、F2 キーまたは右クリックの名前変更で <code>GP14_PoseKoubo</code> に変更します。さらに前の <code>SanaPoseKoubo</code> / <code>PoseKobo</code> からも同じ新しい名前に変更します。</li>
+<li>フォルダ内の写真・動画・保存ポーズが、新しいフォルダ内にあることを確認します。フォルダをコピーしたり、古い名前のまま丸ごと削除したりしないでください。</li>
+<li>配布ページから新版をダウンロードし、Unity の［Assets &gt; Import Package &gt; Custom Package...］から取り込みます。すべての更新項目に印を付けて［Import］を押します。</li>
+<li>コンパイルが終わったらポーズ工房を開き、版番号と保存先、保存済みの写真やポーズを確認します。</li>
+</ol>
+<p>初回は手動で取り込みます。旧版は本体が旧フォルダにあることを確認するため、名前変更後は旧版の［更新］ボタンでは進めない場合があります。</p>
+<p><img style="width:100%;max-width:720px;height:180px;object-fit:cover;object-position:top left" src="images/1_0_20_project_folder.png" alt="Unity の Project ウィンドウで、新しい GP14_PoseKoubo フォルダと製品ファイルを確認した例。" /></p>
+<p>以後、同じ <code>GP14_PoseKoubo</code> への更新では、通常の取り込み手順と更新ボタンを使えます。フォルダ内の写真・動画・保存ポーズを保持します。旧ルート内を指す保存先設定は移動済みの場所を読み替え、外部の独自保存先はそのまま使います。</p>
+<p>新旧フォルダが両方ある・赤いエラーで起動できない場合は、まずバックアップを取り、写真等の保管場所を確認してください。保存データを確認せずにフォルダを削除しないでください。製品コードを新旧で二重に置かず、新しい名前の1か所にまとめてから再度取り込みます。</p>
 <p>Packages 版を使っていた場合は、保存したポーズの場所を確かめてバックアップしてから、Package Manager で旧版を Remove します。旧版と新しい版を同時に置かないでください。</p>
 </section>
 <section class="chapter" id="ch-04_first-practice"><h1>はじめての練習</h1>
@@ -552,8 +561,8 @@ th{background:var(--panel)}
 <p>［消す］は、確認の画面が出ます。消したポーズは、元に戻せません。</p>
 <h3>気をつけること</h3>
 <ul>
-<li>［保存］と［ポーズを保存］で保存したポーズは、<code>Assets/S_PoseKoubo/MyPoses</code> に、ファイルとして入ります。</li>
-<li>［くわしい保存］は、はじめは <code>Assets/S_PoseKoubo/Poses</code> に入ります。</li>
+<li>［保存］と［ポーズを保存］で保存したポーズは、<code>Assets/GP14_PoseKoubo/MyPoses</code> に、ファイルとして入ります。</li>
+<li>［くわしい保存］は、はじめは <code>Assets/GP14_PoseKoubo/Poses</code> に入ります。</li>
 <li>同じ名前で保存すると、「名前 (2)」のように番号が付いて、上書きしません。［くわしい保存］だけは、上書きするか聞かれます。</li>
 <li>手だけを保存したいときは、［手］タブの［手の保存］を使います。</li>
 <li>VRChat のメニューでポーズを選べるようにする方法は、「<a href="#ch-05_10_vrchat">VRChat の中で、ポーズを使いたい</a>」にあります。</li>
@@ -696,7 +705,7 @@ VRChat SDK が入っているプロジェクトでは、使える機能が増え
 <li><p>［いまのポーズを追加］を押します。いまアバターに付いているポーズが、一覧に入ります。</p></li>
 </ol>
 <p>ポーズを付けかえて、使いたいポーズの数だけ、くり返します。
-保存したポーズは、Assets/S_PoseKoubo/MyPoses にあります。そのファイルを選んで、［選択中から追加］を押します。</p>
+保存したポーズは、Assets/GP14_PoseKoubo/MyPoses にあります。そのファイルを選んで、［選択中から追加］を押します。</p>
 <h3>コントローラーを作ります</h3>
 <ol start="4">
 <li><p>［ポーズ切り替えのコントローラーを作る］を押します。「○ 個のポーズで作りました」と出ます。</p>
@@ -1009,7 +1018,7 @@ VRChat SDK が入っているプロジェクトでは、使える機能が増え
 <h2>写真やポーズが見つからない</h2>
 <ul>
 <li>どうなっているか: 保存先は、決まったフォルダです。</li>
-<li>どうすればよいか: 写真は［保存先を開く］で開けます。ポーズは、［ライブラリ］の［マイポーズ］に出ます。［くわしい保存］の分は、Assets/S_PoseKoubo/Poses です。</li>
+<li>どうすればよいか: 写真は［保存先を開く］で開けます。ポーズは、［ライブラリ］の［マイポーズ］に出ます。［くわしい保存］の分は、Assets/GP14_PoseKoubo/Poses です。</li>
 </ul>
 <h2>元に戻したい。Ctrl+Z が効かない</h2>
 <ul>
