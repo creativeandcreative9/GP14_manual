@@ -73,8 +73,8 @@ th{background:var(--panel)}
 <main>
 <section class="chapter" id="ch-index"><h1>ポーズ工房 使用手引書</h1>
 <ul>
-<li>版: 1.0.10</li>
-<li>日付: 2026-10-30</li>
+<li>版: 1.5.0</li>
+<li>日付: 2026-11-06</li>
 </ul>
 <p>Unity に不慣れな方でも、お使いいただけます。</p>
 <h2>この手引書で、できるようになること</h2>
@@ -216,6 +216,19 @@ th{background:var(--panel)}
 </ol>
 <p>通信できないときも、ポーズ工房は使えます。自動確認を止めたいときは、くわしく表示の［設定］で［自動で更新を確認］をオフにします。手動の［更新を確認］は使えます。</p>
 <p>Packages 版は Package Manager または VCC から更新してください。</p>
+<h2 id="ma-fit-preview">ポーズを付けたまま、衣装の合い方を見る</h2>
+<p>［更新を確認］の右隣りにある［MA Fit Preview を有効にする］を押すと、Modular AvatarのFit Previewが開きます。ポーズ工房で選んでいるアバターが対象です。ポーズを付けたまま、衣装の合い方を見られます。</p>
+<p><img src="images/1_5_0_fit_header.png" alt="ポーズ工房1.5.0の上部。更新を確認の右隣りに、MA Fit Preview を有効にするボタンがある。アバターは撮影用のMANUKA。" loading="lazy" /></p>
+<ol><li><p>［アバター］で、衣装を着たシーンのアバターを選び、ポーズを付けます。</p></li>
+<li><p>［MA Fit Preview を有効にする］を押します。開いた窓で、ポーズと衣装を確かめます。白い輪は、Fit Previewの骨の印です。</p></li>
+<li><p>終わったら、同じボタンをもう一度押します。Fit Previewが閉じます。</p></li></ol>
+<p><img src="images/1_5_0_fit_preview.png" alt="MA Fit Previewの実際の窓。ReTulpeを着たMANUKAの複製が、左腕を動かしたポーズで全身表示されている。" loading="lazy" /></p>
+<h3>灰色で押せないとき</h3>
+<ul><li>アバターを選んでいないとき: 「シーンのアバターを選んでください。」と出ます。［アバター］で選びます。</li>
+<li>Modular Avatarが入っていないとき: 「Modular Avatar の Fit Preview メニューが見つかりません。」と出ます。Modular Avatarを入れます。</li>
+<li>Play中: 「Play 中は使えません。」と出ます。Playを止めます。</li>
+<li>ほかのFit Previewが開いているとき: 「ほかの MA Fit Preview を閉じてください。」と出ます。先に、その窓を閉じます。</li></ul>
+<p>理由は、ボタンの下と、マウスを乗せたときの説明に出ます。別のアバターに切り替えるか、ポーズ工房を閉じると、Fit Previewも閉じます。Playに入るときや、対象が無くなったときも閉じます。</p>
 <h2 id="update-folder">初回の更新：フォルダ名を変更してから取り込みます</h2>
 <p>新しい導入先は <code>Assets/GP14_PoseKoubo</code> です。配布ファイル名は、以前の更新機能との互換性のため <code>S_PoseKoubo_v…unitypackage</code> のままです。</p>
 <ol>
@@ -767,6 +780,7 @@ VRChat SDK が入っているプロジェクトでは、使える機能が増え
 <li>［アバター］の欄: ポーズを付けるアバターを選びます。</li>
 <li>［アバターを映す］: シーンビューを、アバターの全身に合わせます。</li>
 </ul>
+<p>［更新を確認］の右隣りの［MA Fit Preview を有効にする］で、ポーズを付けた衣装を別の窓で確かめられます。<a href="#ma-fit-preview">使い方と、押せないとき</a>を見ます。</p>
 <h2>かんたん表示のタブ</h2>
 <ul>
 <li>［ポーズをえらぶ］: ポーズ・手のサイン・表情の絵を、クリックして当てます。</li>
