@@ -637,10 +637,10 @@ th{background:var(--panel)}
 <ol><li>［プリセット］で A・B・C のいずれかを選びます。</li>
 <li>［プリセットをプレビュー］を押し、別の窓で写りを確かめます。撮影用カメラの構図が使われます。</li>
 <li>プレビューの［● 撮影］を押すと、出力で指定した大きさの PNG を保存します。選択やプレビューだけでは保存しません。</li></ol>
-<p><a href="images/1_0_1_capture_look_ui.png" target="_blank" rel="noopener"><img src="images/1_0_1_capture_look_ui.png" alt="撮影タブのプリセット選択と、撮影ボタンのあるプレビュー窓。生成したマネキンで操作を確認しています。" loading="lazy" /></a><br />画像を押すと大きく開けます。</p>
-<p>下は同じ生成マネキンを使った実際の撮影例です。素材・ポーズ・構図によって見た目は変わります。</p>
-<table><thead><tr><th>A (BRP)</th><th>B (BRP)</th></tr></thead><tbody><tr><td><img src="images/1_0_1_look_A_brp.png" alt="A BRPの撮影例" loading="lazy" /></td><td><img src="images/1_0_1_look_B_brp.png" alt="B BRPの撮影例" loading="lazy" /></td></tr></tbody></table>
-<table><thead><tr><th>A (URP)</th><th>B (URP)</th><th>C (URP)</th></tr></thead><tbody><tr><td><img src="images/1_0_1_look_A_urp.png" alt="A URPの撮影例" loading="lazy" /></td><td><img src="images/1_0_1_look_B_urp.png" alt="B URPの撮影例" loading="lazy" /></td><td><img src="images/1_0_1_look_C_urp.png" alt="C URPの撮影例" loading="lazy" /></td></tr></tbody></table>
+<p><a href="images/1_0_1_capture_look_ui.png" target="_blank" rel="noopener"><img src="images/1_0_1_capture_look_ui.png" alt="撮影タブのプリセット選択と、撮影ボタンのあるプレビュー窓。Anon に A (BRP) を選び、プレビューに Anon の全身が写っている。" loading="lazy" /></a><br />画像を押すと大きく開けます。</p>
+<p>下は、Anon に同じポーズ（片足重心）と同じ構図で、プリセットだけを変えて撮った例です。素材・ポーズ・構図によって見た目は変わります。</p>
+<table><thead><tr><th>A (BRP)</th><th>B (BRP)</th></tr></thead><tbody><tr><td><img src="images/1_0_1_look_A_brp.png" width="240" alt="A (BRP) で撮った Anon。斜め上からの光で、画面のまわりが少し暗く、空の色が落ち着いている。" loading="lazy" /></td><td><img src="images/1_0_1_look_B_brp.png" width="240" alt="B (BRP) で撮った Anon。青みのある環境光で、肌と上着が明るく、地平線のあたりが白く光っている。" loading="lazy" /></td></tr></tbody></table>
+<table><thead><tr><th>A (URP)</th><th>B (URP)</th><th>C (URP)</th></tr></thead><tbody><tr><td><img src="images/1_0_1_look_A_urp.png" width="240" alt="A (URP) で撮った Anon。斜め上からの強い光で、顔・上着・脚が明るく写っている。" loading="lazy" /></td><td><img src="images/1_0_1_look_B_urp.png" width="240" alt="B (URP) で撮った Anon。青みのある環境光で全体が明るく、地平線のあたりが白く光っている。" loading="lazy" /></td><td><img src="images/1_0_1_look_C_urp.png" width="240" alt="C (URP) で撮った Anon。光がやわらかく、全体が落ち着いた色になっている。背景が空だけなので、ボケはほとんど目立たない。" loading="lazy" /></td></tr></tbody></table>
 <p>BRP のプリセットには Post Processing 3.x が必要です。URP は Universal RP 14 以降の Universal Renderer を使います。描画方式を切り替えて以前のプリセットが非対応になったときは、対応する項目か［なし（手動設定）］を選び直してください。</p>
 <p>プリセットは GP20 の光と色調を汎用化したものです。材質・構図を保ち、モデル固有の材質補正や固定位置のライト模様は使わないため、研究用の画像と完全に一致するものではありません。C のボケは被写体と背景の距離によって変わります。顔の後ろに背景が無い場合は、ボケの差が小さくなります。</p>
 <p>適用中は、個別に設定した撮影ライト・ポストプロセスよりプリセットが優先されます。［なし（手動設定）］で元の手動設定に戻せます。シーンのライト・環境光は描画の間だけ変わり、撮影後に戻ります。通常の Scene ビューへ常設する機能ではありません。</p>
